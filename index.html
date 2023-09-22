@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mixis.com</title>
+    <link rel="icon" href="img/mixis-2.png">
+    
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>CR</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono  -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://web.facebook.com/profile.php?id=61551579281000"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mixis_marca_personal/"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">¡Bienvenidos!</p>
+                <h2>Soy <span>Carolina Ramírez</span>, Productora Multimedia</h2>
+                <p class="descripcion">Inspirate con la música</p>
+                <a href="#portfolio">Mixis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sombre mí -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/carolina.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">¿Quien soy yo?</p>
+            <h2>¡Hola!, Soy <span>Carolina Ramírez</span> </h2>
+            <h3>Productora Multimedia</h3>
+            <p>Mi enfoque se caracteriza por la atención 
+                meticulosa a los detalles, la búsqueda 
+                constante de la innovación y la entrega de 
+                resultados que superan las expectativas. 
+                Mi destreza en la planficación estratégica 
+                y la recursividad me permite llevar a cabo 
+                proyectos complejos de manera eficiente, 
+                manteniendo siempre la calidad en el 
+                centro de cada etapa del proceso.</p>
+                <a download href="img/Mi hoja de vida.pdf" button class="cv">Descargar CV</button></a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Página web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Css</li>
+                    <li>Html</li>
+                </ul>
+                <p>La página esta con el proposito de atraer visualmente para dar mas impacto.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Tiempo</li>
+                    <li>Diseño</li>
+                    <li>Ilustración</li>
+                </ul>
+                <p>La página tuvo un largo tiempo de planecación pero la idea de que sea un diseño sencillo y que sea facil de poder manejar.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Diseño</li>
+                    <li>Ilustración</li>
+                    <li>Programación</li>
+                </ul>
+                <p>La idea de nuestra página es poder dar un gran impacto a mi público y que sea agradable para el mismo.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Ganacias</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Planeación</li>
+                    <li>Tiempo</li>
+                    <li>Trabajo</li>
+                </ul>
+                <p>Después del tiempo de trabajo sería darle un precio razonable con mi público.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Ilustradora</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Inspiración</li>
+                    <li>Imaginción</li>
+                    <li>Creatividad</li>
+                </ul>
+                <p>Mi página estaba basada en colores que pueda ser llamativos, pero no agresivos a la vista del público.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Consultor Externo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Expasión</li>
+                    <li>Trabajo</li>
+                    <li>Compañerismo</li>
+                </ul>
+                <p>Me gustaría poder expandirme, llegar a más persona, poder ser mucho más reconocida a nivel global con un buen equipo de trabajo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">55%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Adobe Illustrator</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Adobe premiere</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Adobe Photoshop</p>
+                <span class="porcentaje">65%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proyectos -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen1.jpg" alt="">
+                <div class="info">
+                    <h4>Motívate a hacer cosas nuevas</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen2.jpg" alt="">
+                <div class="info">
+                    <h4>Siéntete tú</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen3.jpg" alt="">
+                <div class="info">
+                    <h4>Conoce cosas nuevas sobre ti</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen4.jpg" alt="">
+                <div class="info">
+                    <h4>Escucha lo que más te gusta a ti</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen5.jpg" alt="">
+                <div class="info">
+                    <h4>Sé creativo</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen6.jpg" alt="">
+                <div class="info">
+                    <h4>Espero te guste que es con todo el amor del mundo </h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen7.jpg" alt="">
+                <div class="info">
+                    <h4>No sientas miedo a conocer sentimientos nuevos </h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen8.jpg" alt="">
+                <div class="info">
+                    <h4>Siente feliz por todo lo que haces</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Imagen9.jpg" alt="">
+                <div class="info">
+                    <h4>Solo sé tú</h4>
+                    <p>¡Inspirate con la música!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">¡Se parte de nosotros!</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Contraseña" class="input-mitad">
+                    <input type="email" placeholder="Tú correo electronico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Nombre completo" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="¿Que opinas de nuestra pagina?" class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Empezar" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Parte final -->
+    <footer>
+        <p>Inspirate con la música-Mixis, 2023</p>
+        <div class="redes">
+            <a href="https://web.facebook.com/profile.php?id=61551579281000"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mixis_marca_personal/"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
